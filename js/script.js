@@ -35,8 +35,8 @@ function genRepo(user) {
                         var repo_name = request[i].name;
                         var repo_description = request[i].description;
                         var repo_language = request[i].language;
-                        var repo_stars = request[i].stargazers_count;
-                        var repo_forks = request[i].forks;
+                        //var repo_stars = request[i].stargazers_count;
+                        //var repo_forks = request[i].forks;
 
                         // replaces null values to be better represented when displayed
                         if (repo_description == null) {
@@ -52,8 +52,9 @@ function genRepo(user) {
                             repo_name + "</h1><p class='description'>" +
                             repo_description + "</p>" + "<div class='bottom'><div class='language'><span class='img' uk-icon='code' class='uk-icon'></span>" +
                             repo_language + "</div>  <div class='star'><span class='img' uk-icon='star' class='uk-icon'></span>" +
-                            repo_stars + "  </div> <div class='fork'><span class='img' uk-icon='git-fork' class='uk-icon'></span>" +
-                            repo_forks + "</div></div></div>");
+                            //repo_stars + "  </div> <div class='fork'><span class='img' uk-icon='git-fork' class='uk-icon'></span>" +
+                            //repo_forks + "</div></div></div>");
+                            );
                     }
                 }
             });
